@@ -71,7 +71,7 @@ class TweetController extends Controller
 
         $tweet->update($request->only('tweet'));
 
-        return redirect()->route('tweets.index', $tweet);
+        return redirect()->route('tweets.show', $tweet);
     }
 
     /**
